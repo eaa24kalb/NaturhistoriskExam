@@ -1,0 +1,150 @@
+.header {
+    background-color: white;
+    padding: 1rem 2rem;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1440px;
+    margin: 0 auto;
+  }
+  
+  .logoLink {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo {
+    height: 48px;
+    width: auto;
+  }
+  
+  .nav {
+    display: flex;
+    gap: 2rem;
+  }
+  
+  .nav {
+    display: flex;
+    gap: 0.3rem;
+    flex-wrap: nowrap;
+    align-items: center;
+  }
+  
+  .navItem {
+    position: relative;
+    padding: 0.75rem 1.75rem 0.75rem 1.25rem;
+    background-color: #F1E9D2;
+    color: #003D73;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    border: 2px solid transparent;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  /* First pill */
+  .navItem:first-child {
+    border-radius: 2rem 0 0 2rem;
+  }
+  
+  /* Middle pills */
+  .navItem:not(:first-child):not(:last-child) {
+    border-radius: 0;
+  }
+  
+  /* Last pill */
+  .navItem:last-child {
+    border-radius: 0 2rem 2rem 0;
+  }
+  
+  /* Arrow on hover */
+  .navItem::after {
+    content: "→";
+    margin-left: 0.75rem;
+    transition: transform 0.3s ease;
+    font-size: 1.1rem;
+  }
+  
+  .navItem:hover {
+    background-color: #E1EDF5;
+    transform: translateY(-1px);
+  }
+  
+  .navItem:hover::after {
+    transform: translateX(3px);
+  }
+  
+  .navItem.active {
+    border-color: #003D73;
+    background-color: #E1EDF5;
+  }
+  
+  .rightSide {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem; /* reduced gap */
+    justify-content: flex-end;
+  }
+  
+  .leftControls {
+    display: flex;
+    align-items: center;
+    gap: 1rem; /* spacing between search and lang */
+    flex-grow: 1; /* so it pushes tickets to the right */
+  }
+  
+  .ticketsButton {
+    font-family: inherit;
+    background-color: #003D73;
+    color: white;
+    padding: 0.5rem 1.25rem;
+    border: none;
+    border-radius: 999px;
+    font-size: 0.95rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    white-space: nowrap; 
+  }
+  
+  .ticketsButton:hover {
+    background-color: #8BA6BF;
+  }  
+  
+  .langSwitch {
+    display: flex;
+    flex-direction: column; /* stack vertically */
+    align-items: center;    /* center horizontally */
+    font-size: 0.9rem;
+    color: #003D73;
+    cursor: pointer;
+    line-height: 1.2;
+    gap: 0.1rem; /* a little space between icon and text */
+  }
+
+  .searchButton {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    color: #003D73;
+    padding: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: color 0.3s ease;
+  }
+  
+  .searchButton:hover {
+    color: #005099;
+  }
+  
+  
