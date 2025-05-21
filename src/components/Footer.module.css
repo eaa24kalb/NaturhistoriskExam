@@ -1,11 +1,12 @@
 .footer {
-    background-color: var(--color-primary);
-    padding: 3rem 2rem;
-    font-family: var(--font-family-base);
-    font-weight: var(--font-weight-normal);
-    font-size: var(--font-size-base);
-    line-height: 1.5;
-  }
+  background-color: var(--color-primary);
+  padding: 3rem 2rem;
+  font-family: var(--font-family-base);
+  font-weight: var(--font-weight-normal);
+  font-size: var(--font-size-base);
+  line-height: 1.5;
+  margin-top: 3rem;
+}
 
 .footer p,
 .footer h2,
@@ -14,128 +15,225 @@
 .footer li {
   color: white;
 }
-  
-  .newsletter {
-    max-width: 600px;
-    margin: 0 auto 3rem auto;
+
+.newsletter {
+  max-width: 600px;
+  margin: 0 auto 3rem auto;
+  text-align: center;
+}
+
+.newsletter h2 {
+  font-size: var(--font-size-xl);
+  font-weight: var(--font-weight-bold);
+  margin-bottom: 0.5rem;
+}
+
+.newsletter p {
+  margin-bottom: 1.5rem;
+  font-weight: var(--font-weight-semibold);
+}
+
+.signupForm {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.signupForm input {
+  padding: 0.75rem 1rem;
+  font-size: var(--font-size-base);
+  border-radius: 9999px;
+  border: none;
+  flex-grow: 1;
+  max-width: 300px;
+}
+
+.signupForm button {
+  background-color: var(--color-primary-hover);
+  color: var(--color-primary);
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 9999px;
+  font-weight: var(--font-weight-semibold);
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.signupForm button:hover {
+  background-color: white;
+}
+
+.infoGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 2rem;
+  max-width: 1100px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.infoGrid h3 {
+  font-weight: var(--font-weight-bold);
+  margin-bottom: 0.75rem;
+  font-size: var(--font-size-lg);
+}
+
+.infoGrid p,
+.infoGrid ul {
+  margin: 0;
+}
+
+/* Social Links - Desktop */
+.socialLinks,
+.findLinks {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.socialLinks li,
+.findLinks li {
+  margin-bottom: 0.5rem;
+}
+
+.socialLinks a,
+.findLinks a {
+  text-decoration: none;
+  font-weight: var(--font-weight-semibold);
+  transition: color 0.3s ease;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: white;
+}
+
+.socialLinks a:hover,
+.findLinks a:hover {
+  color: var(--color-primary-hover);
+}
+
+.socialIcon {
+  font-size: 24px;
+}
+
+/* Hide social text on mobile, show bigger icons only */
+@media (max-width: 768px) {
+  .socialText {
+    display: none;
+  }
+  .socialIcon {
+    font-size: 32px;
+  }
+}
+
+.findSection {
+  margin-top: var(--spacing-xl);
+  color: white;
+  margin: 2rem;
+}
+
+.findSection h3 {
+  font-size: var(--font-size-lg);
+  font-weight: var(--font-weight-bold);
+  margin-bottom: var(--spacing-md);
+}
+
+.locations {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--spacing-lg);
+}
+
+.locationBox {
+  flex: 1 1 300px;
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-sm);
+}
+
+.locationTitle {
+  font-weight: var(--font-weight-semibold);
+  font-size: var(--font-size-base);
+}
+
+.map {
+  width: 100%;
+  height: 200px;
+  border: none;
+  border-radius: 0.5rem;
+}
+
+/* MOBILE SEPARATOR (line + logo) */
+.mobileSeparator {
+  display: none;
+  text-align: center;
+  margin: 2rem 0 1rem 0;
+}
+
+.separatorLine {
+  border: none;
+  border-top: 1px solid white;
+  margin: 0 auto 1rem auto;
+  width: 60%;
+  max-width: 300px;
+}
+
+.logoSeal {
+  width: 60px;
+  height: auto;
+  margin: 0 auto;
+}
+
+
+/* Responsive */
+@media (max-width: 768px) {
+  .findSection {
+    display: none;
+  }
+
+  .locationTitle {
+    display: none;
+  }
+
+  .map {
+    display: none;
+  }
+
+  .socialLinks,
+  .findLinks {
+    justify-content: center;
     text-align: center;
   }
-  
+
+  .newsletter {
+    text-align: center;
+  }
+
   .newsletter h2 {
-    font-size: var(--font-size-xl);
-    font-weight: var(--font-weight-bold);
-    margin-bottom: 0.5rem;
+    font-size: 1.5rem;
   }
-  
+
   .newsletter p {
-    margin-bottom: 1.5rem;
-    font-weight: var(--font-weight-semibold);
+    font-size: 1.1rem;
   }
-  
-  .signupForm {
-    display: flex;
-    justify-content: center;
-    gap: 1rem;
+
+  .infoGrid h3,
+  .infoGrid p {
+    text-align: center;
   }
-  
-  .signupForm input {
-    padding: 0.75rem 1rem;
-    font-size: var(--font-size-base);
-    border-radius: 9999px;
-    border: none;
-    flex-grow: 1;
-    max-width: 300px;
-  }
-  
-  .signupForm button {
-    background-color: var(--color-primary-hover);
-    color: var(--color-primary);
-    border: none;
-    padding: 0.75rem 1.5rem;
-    border-radius: 9999px;
-    font-weight: var(--font-weight-semibold);
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
-  
-  .signupForm button:hover {
-    background-color: white;
-  }
-  
-  .infoGrid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-    gap: 2rem;
-    max-width: 1100px;
-    margin: 0 auto;
-    text-align: left;
-  }
-  
+
   .infoGrid h3 {
-    font-weight: var(--font-weight-bold);
-    margin-bottom: 0.75rem;
-    font-size: var(--font-size-lg);
-  }
-  
-  .infoGrid p, .infoGrid ul {
-    margin: 0;
-  }
-  
-  .socialLinks, .findLinks {
-    list-style: none;
-    padding: 0;
-  }
-  
-  .socialLinks li, .findLinks li {
-    margin-bottom: 0.5rem;
-  }
-  
-  .socialLinks a, .findLinks a {
-    text-decoration: none;
-    font-weight: var(--font-weight-semibold);
-    transition: color 0.3s ease;
-  }
-  
-  .socialLinks a:hover, .findLinks a:hover {
-    color: var(--color-primary-hover);
+    font-size: 1.1rem;
   }
 
+  .infoGrid p {
+    font-size: 1rem;
+  }
 
-  .findSection {
-    margin-top: var(--spacing-xl);
-    color: white;
-    margin: 2rem;
+  /* Show mobile separator on mobile */
+  .mobileSeparator {
+    display: block;
   }
-  
-  .findSection h3 {
-    font-size: var(--font-size-lg);
-    font-weight: var(--font-weight-bold);
-    margin-bottom: var(--spacing-md);
-  }
-  
-  .locations {
-    display: flex;
-    flex-wrap: wrap;
-    gap: var(--spacing-lg);
-  }
-  
-  .locationBox {
-    flex: 1 1 300px;
-    display: flex;
-    flex-direction: column;
-    gap: var(--spacing-sm);
-  }
-  
-  .locationTitle {
-    font-weight: var(--font-weight-semibold);
-    font-size: var(--font-size-base);
-  }
-  
-  .map {
-    width: 100%;
-    height: 200px;
-    border: none;
-    border-radius: 0.5rem;
-  }
-  
-  
+}

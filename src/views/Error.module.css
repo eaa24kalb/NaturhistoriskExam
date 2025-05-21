@@ -67,15 +67,12 @@
   }
 
 .beetle {
-  position: absolute;
-  bottom: 1.25rem; /* 20px */
-  right: 1.25rem; /* 20px */
-  width: 5rem; /* 80px */
-  height: auto;
-  filter: drop-shadow(0 0.125rem 0.25rem rgba(0, 0, 0, 0.2));
-  transition: transform 0.3s ease, filter 0.3s ease;
-  transform: rotate(-40deg);
-  cursor: pointer;
+    width: 5rem;
+    height: auto;
+    filter: drop-shadow(0 0.125rem 0.25rem rgba(0, 0, 0, 0.2));
+    transition: transform 0.3s ease, filter 0.3s ease;
+    transform: rotate(-40deg);
+    cursor: pointer;
 }
 
 .beetle:hover {

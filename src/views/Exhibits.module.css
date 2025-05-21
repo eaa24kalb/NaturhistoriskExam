@@ -1,0 +1,467 @@
+/* Base Layout */
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 2rem;
+    background-color: #fff;
+    color: #003D73;
+    font-family: 'AUPassata', sans-serif;
+  }
+  
+  .topSection {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 4rem;
+    align-items: stretch;
+    justify-content: center;
+    width: 100vw;
+    max-width: 100%;
+  }
+
+  .topSection h3 {
+    font-size: 2rem;
+  font-weight: bold;
+  color: #003D73;
+  margin-top: 1rem;
+  }
+
+  
+  /* Newest Addition */
+  .newBlob {
+    background-color: #003D73;
+    color: white;
+    padding: 3rem 4rem 5rem;
+    clip-path: polygon(1.22019px 96.7509px, 1.22019px 96.7509px, 0.0046583200000002px 90.74369871px, 0.94381856px 81.96693408px, 4.05900564px 71.15353497px, 9.37155448px 59.03643024px, 16.9028px 46.34854875px, 26.67407712px 33.82281936px, 38.70672076px 22.19217093px, 53.02206584px 12.18953232px, 69.64144728px 4.54783239px, 88.5862px 3.0604285772284E-15px, calc(100% - 59.43px) 37.295px, calc(100% - 59.43px) 37.295px, calc(100% - 50.94981px) 38.0024346px, calc(100% - 42.47808px) 40.0505488px, calc(100% - 34.22307px) 43.3280582px, calc(100% - 26.39304px) 47.7236784px, calc(100% - 19.19625px) 53.126125px, calc(100% - 12.84096px) 59.4241136px, calc(100% - 7.5354299999999px) 66.5063598px, calc(100% - 3.48792px) 74.2615792px, calc(100% - 0.90669000000003px) 82.5784874px, calc(100% - 2.2737367544323E-13px) 91.3458px, calc(100% - 0px) calc(100% - 148.64px), calc(100% - 0px) calc(100% - 148.64px), calc(100% - 1.2051799999997px) calc(100% - 139.448784px), calc(100% - 4.5966399999998px) calc(100% - 129.981592px), calc(100% - 9.8382600000002px) calc(100% - 120.531308px), calc(100% - 16.59392px) calc(100% - 111.390816px), calc(100% - 24.5275px) calc(100% - 102.853px), calc(100% - 33.30288px) calc(100% - 95.210744px), calc(100% - 42.58394px) calc(100% - 88.756932px), calc(100% - 52.03456px) calc(100% - 83.784448px), calc(100% - 61.31862px) calc(100% - 80.586176px), calc(100% - 70.1px) calc(100% - 79.455px), 71.8244px calc(100% - 0px), 71.8244px calc(100% - 0px), 59.38891284px calc(100% - 3.517603px), 48.28830712px calc(100% - 9.8501839999998px), 38.51648648px calc(100% - 18.504801px), 30.06735456px calc(100% - 28.988512px), 22.934815px calc(100% - 40.808375px), 17.11277144px calc(100% - 53.471448px), 12.59512752px calc(100% - 66.484789px), 9.37578688px calc(100% - 79.355456px), 7.44865316px calc(100% - 91.590507px), 6.80763px calc(100% - 102.697px), 1.22019px 96.7509px); 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    box-shadow: 0 0.25rem 1.25rem rgba(0, 0, 0, 0.05);
+    position: relative;
+    margin: 0 auto;
+  }
+  
+  .imageGrid {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 1rem;
+    flex: 1;
+    justify-content: center;
+  }
+  
+  .imageGrid img {
+    width: 15rem;
+    height: 10rem;
+    object-fit: cover;
+    border-radius: 1rem;
+    transform: rotate(-2deg);
+    box-shadow: 0 0.25rem 0.625rem rgba(0, 0, 0, 0.1);
+  }
+  
+  .textBlock {
+    flex: 1;
+    max-width: 40rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .textBlock h3 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: white;
+    margin: 0;
+  }
+  
+  .textBlock p {
+    font-size: 1rem;
+    color: white;
+    line-height: 1.5;
+  }
+  
+  .textBlock button {
+    width: fit-content;
+    padding: 0.6rem 1.2rem;
+    border-radius: 999px;
+    background-color: white;
+    color: #003D73;
+    border: none;
+    font-weight: 600;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .textBlock button:hover {
+    background-color: #8BA6BF;
+  }
+
+
+  /* Beetles */
+  .beetlesBlob {
+    background-color: #f7f2e7;
+    padding: 3rem 4rem 5rem;
+    clip-path: polygon(14.2192px 91.1345px, 14.2192px 91.1345px, 14.8342711px 83.0941215px, 16.6149808px 75.466804px, 19.4645737px 68.3546045px, 23.2862944px 61.85958px, 27.9833875px 56.0837875px, 33.4590976px 51.129284px, 39.6166693px 47.0981265px, 46.3593472px 44.092372px, 53.5903759px 42.2140775px, 61.213px 41.5653px, calc(100% - 67.03px) 0px, calc(100% - 67.03px) 0px, calc(100% - 58.84731px) 1.8126059px, calc(100% - 50.09408px) 6.8498632px, calc(100% - 41.10757px) 14.5109313px, calc(100% - 32.22504px) 24.1949696px, calc(100% - 23.78375px) 35.3011375px, calc(100% - 16.12096px) 47.2285944px, calc(100% - 9.57393px) 59.3764997px, calc(100% - 4.47992px) 71.1440128px, calc(100% - 1.1761900000001px) 81.9302931px, calc(100% - 2.2737367544323E-13px) 91.1345px, calc(100% - 0px) calc(100% - 157.577px), calc(100% - 0px) calc(100% - 157.577px), calc(100% - 0.069059999999581px) calc(100% - 146.796246px), calc(100% - 0.55247999999983px) calc(100% - 131.685568px), calc(100% - 1.8646200000001px) calc(100% - 113.453942px), calc(100% - 4.4198399999998px) calc(100% - 93.310344px), calc(100% - 8.6324999999999px) calc(100% - 72.46375px), calc(100% - 14.91696px) calc(100% - 52.123136px), calc(100% - 23.68758px) calc(100% - 33.497478px), calc(100% - 35.35872px) calc(100% - 17.795752px), calc(100% - 50.34474px) calc(100% - 6.226934px), calc(100% - 69.06px) calc(100% - 0px), 61.213px calc(100% - 91.5px), 61.213px calc(100% - 91.5px), 53.1922383px calc(100% - 92.933145px), 44.8805504px calc(100% - 96.94044px), 36.5453221px calc(100% - 103.083675px), 28.4539392px calc(100% - 110.92464px), 20.8737875px calc(100% - 120.025125px), 14.0722528px calc(100% - 129.94692px), 8.3167209px calc(100% - 140.251815px), 3.8745776px calc(100% - 150.5016px), 1.0132087px calc(100% - 160.258065px), 1.3038058848412E-30px calc(100% - 169.083px), 14.2192px 91.1345px); 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    box-shadow: 0 0.25rem 1.25rem rgba(0, 0, 0, 0.05);
+    position: relative;
+    margin: 0 auto;
+  }
+  
+  .beetlesBlob img {
+    width: 25rem;
+    height: 15rem;
+    object-fit: cover;
+    border-radius: 1rem;
+    transform: rotate(-2deg);
+    box-shadow: 0 0.25rem 0.625rem rgba(0, 0, 0, 0.1);
+  }
+  
+  .beetlesBlob .textBlock {
+    flex: 1;
+    max-width: 40rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .beetlesBlob h3 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #003D73;
+    margin: 0;
+  }
+  
+  .beetlesBlob p {
+    font-size: 1rem;
+    color: #003D73;
+    line-height: 1.5;
+  }
+  
+
+  /* Oops */
+  .oopsBlob {
+    background-color: #003D73;
+    color: white;
+    padding: 3rem 4rem 5rem;
+    clip-path: polygon(1.22019px 96.7509px, 1.22019px 96.7509px, 0.0046583200000002px 90.74369871px, 0.94381856px 81.96693408px, 4.05900564px 71.15353497px, 9.37155448px 59.03643024px, 16.9028px 46.34854875px, 26.67407712px 33.82281936px, 38.70672076px 22.19217093px, 53.02206584px 12.18953232px, 69.64144728px 4.54783239px, 88.5862px 3.0604285772284E-15px, calc(100% - 59.43px) 37.295px, calc(100% - 59.43px) 37.295px, calc(100% - 50.94981px) 38.0024346px, calc(100% - 42.47808px) 40.0505488px, calc(100% - 34.22307px) 43.3280582px, calc(100% - 26.39304px) 47.7236784px, calc(100% - 19.19625px) 53.126125px, calc(100% - 12.84096px) 59.4241136px, calc(100% - 7.5354299999999px) 66.5063598px, calc(100% - 3.48792px) 74.2615792px, calc(100% - 0.90669000000003px) 82.5784874px, calc(100% - 2.2737367544323E-13px) 91.3458px, calc(100% - 0px) calc(100% - 148.64px), calc(100% - 0px) calc(100% - 148.64px), calc(100% - 1.2051799999997px) calc(100% - 139.448784px), calc(100% - 4.5966399999998px) calc(100% - 129.981592px), calc(100% - 9.8382600000002px) calc(100% - 120.531308px), calc(100% - 16.59392px) calc(100% - 111.390816px), calc(100% - 24.5275px) calc(100% - 102.853px), calc(100% - 33.30288px) calc(100% - 95.210744px), calc(100% - 42.58394px) calc(100% - 88.756932px), calc(100% - 52.03456px) calc(100% - 83.784448px), calc(100% - 61.31862px) calc(100% - 80.586176px), calc(100% - 70.1px) calc(100% - 79.455px), 71.8244px calc(100% - 0px), 71.8244px calc(100% - 0px), 59.38891284px calc(100% - 3.517603px), 48.28830712px calc(100% - 9.8501839999998px), 38.51648648px calc(100% - 18.504801px), 30.06735456px calc(100% - 28.988512px), 22.934815px calc(100% - 40.808375px), 17.11277144px calc(100% - 53.471448px), 12.59512752px calc(100% - 66.484789px), 9.37578688px calc(100% - 79.355456px), 7.44865316px calc(100% - 91.590507px), 6.80763px calc(100% - 102.697px), 1.22019px 96.7509px); 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    box-shadow: 0 0.25rem 1.25rem rgba(0, 0, 0, 0.05);
+    position: relative;
+    margin: 0 auto;
+  }
+  
+  
+  .oopsBlob .textBlock {
+    max-width: 40rem;
+  }
+  
+  .oopsBlob h3 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: white;
+    margin: 0;
+  }
+  
+  .oopsBlob p {
+    font-size: 1rem;
+    color: white;
+    line-height: 1.5;
+  }
+  
+  .oopsBlob img {
+    width: 25rem;
+    height: 15rem;
+    object-fit: cover;
+    border-radius: 1rem;
+    gap: 1rem;
+    box-shadow: 0 0.25rem 0.625rem rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+
+  /* African Blob */
+  .africanBlob {
+    background-color: #f7f2e7;
+    padding: 3rem 4rem 5rem;
+  clip-path: polygon(14.2192px 91.1345px, 14.2192px 91.1345px, 14.8342711px 83.0941215px, 16.6149808px 75.466804px, 19.4645737px 68.3546045px, 23.2862944px 61.85958px, 27.9833875px 56.0837875px, 33.4590976px 51.129284px, 39.6166693px 47.0981265px, 46.3593472px 44.092372px, 53.5903759px 42.2140775px, 61.213px 41.5653px, calc(100% - 67.03px) 0px, calc(100% - 67.03px) 0px, calc(100% - 58.84731px) 1.8126059px, calc(100% - 50.09408px) 6.8498632px, calc(100% - 41.10757px) 14.5109313px, calc(100% - 32.22504px) 24.1949696px, calc(100% - 23.78375px) 35.3011375px, calc(100% - 16.12096px) 47.2285944px, calc(100% - 9.57393px) 59.3764997px, calc(100% - 4.47992px) 71.1440128px, calc(100% - 1.1761900000001px) 81.9302931px, calc(100% - 2.2737367544323E-13px) 91.1345px, calc(100% - 0px) calc(100% - 157.577px), calc(100% - 0px) calc(100% - 157.577px), calc(100% - 0.069059999999581px) calc(100% - 146.796246px), calc(100% - 0.55247999999983px) calc(100% - 131.685568px), calc(100% - 1.8646200000001px) calc(100% - 113.453942px), calc(100% - 4.4198399999998px) calc(100% - 93.310344px), calc(100% - 8.6324999999999px) calc(100% - 72.46375px), calc(100% - 14.91696px) calc(100% - 52.123136px), calc(100% - 23.68758px) calc(100% - 33.497478px), calc(100% - 35.35872px) calc(100% - 17.795752px), calc(100% - 50.34474px) calc(100% - 6.226934px), calc(100% - 69.06px) calc(100% - 0px), 61.213px calc(100% - 91.5px), 61.213px calc(100% - 91.5px), 53.1922383px calc(100% - 92.933145px), 44.8805504px calc(100% - 96.94044px), 36.5453221px calc(100% - 103.083675px), 28.4539392px calc(100% - 110.92464px), 20.8737875px calc(100% - 120.025125px), 14.0722528px calc(100% - 129.94692px), 8.3167209px calc(100% - 140.251815px), 3.8745776px calc(100% - 150.5016px), 1.0132087px calc(100% - 160.258065px), 1.3038058848412E-30px calc(100% - 169.083px), 14.2192px 91.1345px); 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    box-shadow: 0 0.25rem 1.25rem rgba(0, 0, 0, 0.05);
+    position: relative;
+    margin: 0 auto;
+  }
+  
+  
+  .africanBlob .textBlock {
+    max-width: 40rem;
+  }
+  
+  .africanBlob h3 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #003D73;
+    margin: 0;
+  }
+  
+  .africanBlob p {
+    font-size: 1rem;
+    color: #003D73;
+    line-height: 1.5;
+  }
+  
+  .africanBlob img {
+    width: 20rem;
+    height: 25rem;
+    object-fit: cover;
+    border-radius: 1rem;
+    gap: 1rem;
+    box-shadow: 0 0.25rem 0.625rem rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+
+
+  /* Nature */
+  .natureBlob {
+    background-color: #003D73;
+    color: white;
+    padding: 3rem 4rem 5rem;
+    clip-path: polygon(1.22019px 96.7509px, 1.22019px 96.7509px, 0.0046583200000002px 90.74369871px, 0.94381856px 81.96693408px, 4.05900564px 71.15353497px, 9.37155448px 59.03643024px, 16.9028px 46.34854875px, 26.67407712px 33.82281936px, 38.70672076px 22.19217093px, 53.02206584px 12.18953232px, 69.64144728px 4.54783239px, 88.5862px 3.0604285772284E-15px, calc(100% - 59.43px) 37.295px, calc(100% - 59.43px) 37.295px, calc(100% - 50.94981px) 38.0024346px, calc(100% - 42.47808px) 40.0505488px, calc(100% - 34.22307px) 43.3280582px, calc(100% - 26.39304px) 47.7236784px, calc(100% - 19.19625px) 53.126125px, calc(100% - 12.84096px) 59.4241136px, calc(100% - 7.5354299999999px) 66.5063598px, calc(100% - 3.48792px) 74.2615792px, calc(100% - 0.90669000000003px) 82.5784874px, calc(100% - 2.2737367544323E-13px) 91.3458px, calc(100% - 0px) calc(100% - 148.64px), calc(100% - 0px) calc(100% - 148.64px), calc(100% - 1.2051799999997px) calc(100% - 139.448784px), calc(100% - 4.5966399999998px) calc(100% - 129.981592px), calc(100% - 9.8382600000002px) calc(100% - 120.531308px), calc(100% - 16.59392px) calc(100% - 111.390816px), calc(100% - 24.5275px) calc(100% - 102.853px), calc(100% - 33.30288px) calc(100% - 95.210744px), calc(100% - 42.58394px) calc(100% - 88.756932px), calc(100% - 52.03456px) calc(100% - 83.784448px), calc(100% - 61.31862px) calc(100% - 80.586176px), calc(100% - 70.1px) calc(100% - 79.455px), 71.8244px calc(100% - 0px), 71.8244px calc(100% - 0px), 59.38891284px calc(100% - 3.517603px), 48.28830712px calc(100% - 9.8501839999998px), 38.51648648px calc(100% - 18.504801px), 30.06735456px calc(100% - 28.988512px), 22.934815px calc(100% - 40.808375px), 17.11277144px calc(100% - 53.471448px), 12.59512752px calc(100% - 66.484789px), 9.37578688px calc(100% - 79.355456px), 7.44865316px calc(100% - 91.590507px), 6.80763px calc(100% - 102.697px), 1.22019px 96.7509px); 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    box-shadow: 0 0.25rem 1.25rem rgba(0, 0, 0, 0.05);
+    position: relative;
+    margin: 0 auto;
+  }
+  
+  
+  .natureBlob .textBlock {
+    max-width: 40rem;
+  }
+  
+  .natureBlob h3 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: white;
+    margin: 0;
+  }
+  
+  .natureBlob p {
+    font-size: 1rem;
+    color: white;
+    line-height: 1.5;
+  }
+  
+  
+  .natureBlob img {
+    width: 20rem;
+    height: 25rem;
+    object-fit: cover;
+    border-radius: 1rem;
+    gap: 1rem;
+    box-shadow: 0 0.25rem 0.625rem rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  /* Backyard */
+  .backyardBlob {
+    background-color: #f7f2e7;
+    padding: 3rem 4rem 5rem;
+  clip-path: polygon(14.2192px 91.1345px, 14.2192px 91.1345px, 14.8342711px 83.0941215px, 16.6149808px 75.466804px, 19.4645737px 68.3546045px, 23.2862944px 61.85958px, 27.9833875px 56.0837875px, 33.4590976px 51.129284px, 39.6166693px 47.0981265px, 46.3593472px 44.092372px, 53.5903759px 42.2140775px, 61.213px 41.5653px, calc(100% - 67.03px) 0px, calc(100% - 67.03px) 0px, calc(100% - 58.84731px) 1.8126059px, calc(100% - 50.09408px) 6.8498632px, calc(100% - 41.10757px) 14.5109313px, calc(100% - 32.22504px) 24.1949696px, calc(100% - 23.78375px) 35.3011375px, calc(100% - 16.12096px) 47.2285944px, calc(100% - 9.57393px) 59.3764997px, calc(100% - 4.47992px) 71.1440128px, calc(100% - 1.1761900000001px) 81.9302931px, calc(100% - 2.2737367544323E-13px) 91.1345px, calc(100% - 0px) calc(100% - 157.577px), calc(100% - 0px) calc(100% - 157.577px), calc(100% - 0.069059999999581px) calc(100% - 146.796246px), calc(100% - 0.55247999999983px) calc(100% - 131.685568px), calc(100% - 1.8646200000001px) calc(100% - 113.453942px), calc(100% - 4.4198399999998px) calc(100% - 93.310344px), calc(100% - 8.6324999999999px) calc(100% - 72.46375px), calc(100% - 14.91696px) calc(100% - 52.123136px), calc(100% - 23.68758px) calc(100% - 33.497478px), calc(100% - 35.35872px) calc(100% - 17.795752px), calc(100% - 50.34474px) calc(100% - 6.226934px), calc(100% - 69.06px) calc(100% - 0px), 61.213px calc(100% - 91.5px), 61.213px calc(100% - 91.5px), 53.1922383px calc(100% - 92.933145px), 44.8805504px calc(100% - 96.94044px), 36.5453221px calc(100% - 103.083675px), 28.4539392px calc(100% - 110.92464px), 20.8737875px calc(100% - 120.025125px), 14.0722528px calc(100% - 129.94692px), 8.3167209px calc(100% - 140.251815px), 3.8745776px calc(100% - 150.5016px), 1.0132087px calc(100% - 160.258065px), 1.3038058848412E-30px calc(100% - 169.083px), 14.2192px 91.1345px); 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    box-shadow: 0 0.25rem 1.25rem rgba(0, 0, 0, 0.05);
+    position: relative;
+    margin: 0 auto;
+  }
+  
+  
+  .backyardBlob .textBlock {
+    max-width: 40rem;
+  }
+  
+  .backyardBlob h3 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #003D73;
+    margin: 0;
+  }
+  
+  .backyardBlob p {
+    font-size: 1rem;
+    color: #003D73;
+    line-height: 1.5;
+  }
+  
+  .backyardBlob img {
+    width: 20rem;
+    height: 25rem;
+    object-fit: cover;
+    border-radius: 1rem;
+    gap: 1rem;
+    box-shadow: 0 0.25rem 0.625rem rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+
+
+  /* 99 arter */
+  .arterBlob {
+    background-color: #003D73;
+    color: white;
+    padding: 3rem 4rem 5rem;
+    clip-path: polygon(1.22019px 96.7509px, 1.22019px 96.7509px, 0.0046583200000002px 90.74369871px, 0.94381856px 81.96693408px, 4.05900564px 71.15353497px, 9.37155448px 59.03643024px, 16.9028px 46.34854875px, 26.67407712px 33.82281936px, 38.70672076px 22.19217093px, 53.02206584px 12.18953232px, 69.64144728px 4.54783239px, 88.5862px 3.0604285772284E-15px, calc(100% - 59.43px) 37.295px, calc(100% - 59.43px) 37.295px, calc(100% - 50.94981px) 38.0024346px, calc(100% - 42.47808px) 40.0505488px, calc(100% - 34.22307px) 43.3280582px, calc(100% - 26.39304px) 47.7236784px, calc(100% - 19.19625px) 53.126125px, calc(100% - 12.84096px) 59.4241136px, calc(100% - 7.5354299999999px) 66.5063598px, calc(100% - 3.48792px) 74.2615792px, calc(100% - 0.90669000000003px) 82.5784874px, calc(100% - 2.2737367544323E-13px) 91.3458px, calc(100% - 0px) calc(100% - 148.64px), calc(100% - 0px) calc(100% - 148.64px), calc(100% - 1.2051799999997px) calc(100% - 139.448784px), calc(100% - 4.5966399999998px) calc(100% - 129.981592px), calc(100% - 9.8382600000002px) calc(100% - 120.531308px), calc(100% - 16.59392px) calc(100% - 111.390816px), calc(100% - 24.5275px) calc(100% - 102.853px), calc(100% - 33.30288px) calc(100% - 95.210744px), calc(100% - 42.58394px) calc(100% - 88.756932px), calc(100% - 52.03456px) calc(100% - 83.784448px), calc(100% - 61.31862px) calc(100% - 80.586176px), calc(100% - 70.1px) calc(100% - 79.455px), 71.8244px calc(100% - 0px), 71.8244px calc(100% - 0px), 59.38891284px calc(100% - 3.517603px), 48.28830712px calc(100% - 9.8501839999998px), 38.51648648px calc(100% - 18.504801px), 30.06735456px calc(100% - 28.988512px), 22.934815px calc(100% - 40.808375px), 17.11277144px calc(100% - 53.471448px), 12.59512752px calc(100% - 66.484789px), 9.37578688px calc(100% - 79.355456px), 7.44865316px calc(100% - 91.590507px), 6.80763px calc(100% - 102.697px), 1.22019px 96.7509px); 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    box-shadow: 0 0.25rem 1.25rem rgba(0, 0, 0, 0.05);
+    position: relative;
+    margin: 0 auto;
+  }
+  
+  
+  .arterBlob .textBlock {
+    max-width: 40rem;
+  }
+  
+  .arterBlob h3 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: white;
+    margin: 0;
+  }
+  
+  .arterBlob p {
+    font-size: 1rem;
+    color: white;
+    line-height: 1.5;
+  }
+
+
+  /* Same widths */
+.newBlob,
+.beetlesBlob,
+.oopsBlob,
+.africanBlob, 
+.natureBlob,
+.backyardBlob,
+.arterBlob {
+  width: 75%;
+  max-width: 100rem;
+  gap: 2rem;
+}
+
+
+  /* Badge */
+  .badge {
+    position: absolute;
+    top: 3.75rem;
+    right: 3.75rem;
+    background-color: #f24e1e;
+    color: white;
+    font-size: 0.9rem;
+    font-weight: 600;
+    padding: 0.25rem 0.5rem;
+    border-radius: 0.5rem;
+    white-space: nowrap;
+    z-index: 10;
+  }
+  
+
+  /* Respoonsive */
+  @media (max-width: 48rem) {
+
+    .newBlob,
+    .beetlesBlob,
+    .oopsBlob,
+    .africanBlob,
+    .natureBlob,
+    .backyardBlob,
+    .arterBlob {
+      flex-direction: column;
+      padding: 1.5rem 2rem;
+      gap: 1.5rem;
+      clip-path: none;
+      border-radius: 1.5rem;
+    }
+  
+    .newBlob img,
+    .beetlesBlob img,
+    .oopsBlob img,
+    .africanBlob img,
+    .natureBlob img,
+    .backyardBlob img,
+    .arterBlob img {
+      width: 100%;
+      height: auto;
+      max-width: 20rem;
+      margin: 0 auto;
+      border-radius: 1rem;
+      box-shadow: 0 0.25rem 0.625rem rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease;
+    }
+  
+    .imageGrid {
+      grid-template-columns: 1fr;
+      justify-items: center;
+      gap: 1rem;
+    }
+  
+    .textBlock {
+      max-width: 28rem; 
+      margin: 0 auto;
+      align-items: center;
+      text-align: center;
+      padding: 0 1rem;
+    }
+  
+    .textBlock h3 {
+      font-size: 1.625rem; 
+      line-height: 1.3;
+      margin-bottom: 0.5rem;
+    }
+  
+    .textBlock p {
+      font-size: 1rem; 
+      line-height: 1.5;
+    }
+  
+    .textBlock button {
+      font-size: 1rem;
+      padding: 0.75rem 1.5rem;
+      border-radius: 9999px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+  
+    .topSection {
+        flex-direction: column;
+        gap: 1rem;
+        padding: 1rem 1.5rem;
+        align-items: center; 
+        text-align: center;  
+      }
+    
+      .topSection h3 {
+        font-size: 2rem;
+        font-weight: 700;
+        color: #003D73;
+        text-align: center;
+        margin: 0 auto;
+      }
+  }
+  
+  
