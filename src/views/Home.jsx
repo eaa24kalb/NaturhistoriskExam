@@ -3,20 +3,18 @@ import styles from './home.module.css';
 import { useNavigate } from 'react-router-dom';
 
 // Images
-import visit from '../assets/images/Visit.png';
 import boar from '../assets/images/Boar.png';
-import jars from '../assets/images/Jars.png';
-import wolves from '../assets/images/Wolves.png';
 import skeleton from '../assets/images/Skeleton.png';
 import butterflies from '../assets/images/Butterflies.png';
 import safari from '../assets/images/Safari.png';
-import moose from '../assets/images/Moose.png';
 import whale from '../assets/images/Whale.png';
 import survey from '../assets/images/Survey.png';
 import oops from '../assets/images/Oops.png';
 import future from '../assets/images/Future.png';
 import beetles from '../assets/images/Beetles.png';
 import butterfly from '../assets/images/Butterfly-jar.png';
+import bear2 from '../assets/images/Bear2.png';
+
 
 
 export default function Home() {
@@ -29,11 +27,17 @@ export default function Home() {
       {/* Top Section */}
       <section className={styles.topSection}>
         <div className={styles.linksColumn}>
+          <h2>Naturhistorisk Museum Aarhus</h2>
       <br />
-          <button>Plan your visit →</button>
-          <button>Exhibitions →</button>
-          <button>The Mols Laboratory Research Station →  </button>
-          <button>About Naturhistorisk Museum Aarhus →  </button>
+      <button onClick={() => {
+        const el = document.getElementById("visitSection");
+        if (el) el.scrollIntoView({ behavior: "smooth" });
+      }}>
+        Plan your visit →
+      </button>
+          <button onClick={() => navigate('/exhibits')}>Exhibitions →</button>
+          <button onClick={() => navigate('/error')}>The Mols Laboratory Research Station →  </button>
+          <button onClick={() => navigate('/error')}>About Naturhistorisk Museum Aarhus →  </button>
         </div>
         <div className={styles.topImage}>
           <img src={butterfly} alt="Butterfly" />
@@ -42,10 +46,10 @@ export default function Home() {
 
 
       {/* Plan your visit*/}
-      <section className={styles.visitSectionWrapper}>
+      <section id="visitSection" className={styles.visitSectionWrapper}>
         <h2 className={styles.visitHeading}>Plan your visit</h2>
         <div className={styles.visitSection}>
-        <img src={visit} alt="Visit" />
+        <img src={bear2} alt="Bear2" />
           <div className={styles.textBlock}>
             <p><strong><u>Opening Hours</u></strong><br /> 
             Monday: <b>Closed</b><br />Tuesday: <b>9-16</b><br />Wednesday: <b>9-21</b><br />Thursday - Sunday: <b>9-16</b></p>
@@ -132,9 +136,9 @@ export default function Home() {
       <section className={styles.exhibitionsBlob}>
         <div className={styles.imageGrid}>
           <img src={boar} alt="Boar" />
-          <img src={wolves} alt="Wolves" />
+          <img src={butterflies} alt="Butterflies" />
+          <img src={whale} alt="Whale" />
           <img src={safari} alt="Safari" />
-          <img src={jars} alt="Jars" />
         </div>
         <div className={styles.textBlock}>
           <h3>Explore our Exhibitions</h3>

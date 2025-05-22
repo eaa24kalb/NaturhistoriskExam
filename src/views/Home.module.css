@@ -35,6 +35,12 @@
   transition: transform 0.3s ease;
 }
 
+.linksColumn h2 {
+  color: white;
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
 
 .linksColumn button {
   background: none;
@@ -282,6 +288,7 @@
   box-shadow: 0 0.25rem 0.625rem rgba(0, 0, 0, 0.1);
 }
 
+
 .textBlock {
   flex: 1;
   max-width: 40rem;
@@ -368,7 +375,7 @@
 }
 
 .moreBlob img {
-  width: 20rem;
+  width: 25rem;
   height: 25rem;
   object-fit: cover;
   border-radius: 1rem;
@@ -489,6 +496,23 @@
   padding: 1.5rem;
   border-radius: 1.5rem;
   }
+
+  .exhibitionsBlob img,
+  .moreBlob img {
+      width: 100%;
+      height: auto;
+      max-width: 15rem;
+      margin: 0 auto;
+      border-radius: 1rem;
+      box-shadow: 0 0.25rem 0.625rem rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease;
+    }
+  
+    .imageGrid {
+      grid-template-columns: 1fr;
+      justify-items: center;
+      gap: 1rem;
+    }
   
   .textBlock h3 {
   font-size: 1.5rem;

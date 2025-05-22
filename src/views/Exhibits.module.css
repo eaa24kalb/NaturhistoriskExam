@@ -52,10 +52,9 @@
   
   .imageGrid img {
     width: 15rem;
-    height: 10rem;
+    height: 25rem;
     object-fit: cover;
     border-radius: 1rem;
-    transform: rotate(-2deg);
     box-shadow: 0 0.25rem 0.625rem rgba(0, 0, 0, 0.1);
   }
   
@@ -113,11 +112,10 @@
   }
   
   .beetlesBlob img {
-    width: 25rem;
-    height: 15rem;
+    width: 15rem;
+    height: 18rem;
     object-fit: cover;
     border-radius: 1rem;
-    transform: rotate(-2deg);
     box-shadow: 0 0.25rem 0.625rem rgba(0, 0, 0, 0.1);
   }
   
@@ -220,13 +218,12 @@
   }
   
   .africanBlob img {
-    width: 20rem;
-    height: 25rem;
+    width: 16rem;
+    height: 20rem;
     object-fit: cover;
     border-radius: 1rem;
-    gap: 1rem;
     box-shadow: 0 0.25rem 0.625rem rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
+    gap: 0.5rem;
   }
 
 
@@ -263,16 +260,23 @@
     line-height: 1.5;
   }
   
+  .natureBlob .imageGrid {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 1rem;
+    flex: 1;
+    justify-content: center;
+  }
   
-  .natureBlob img {
-    width: 20rem;
-    height: 25rem;
+  .natureBlob .imageGrid img {
+    width: 17rem;
+    height: 12rem;
     object-fit: cover;
     border-radius: 1rem;
-    gap: 1rem;
+    transform: rotate(-2deg);
     box-shadow: 0 0.25rem 0.625rem rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
   }
+
   
   /* Backyard */
   .backyardBlob {
@@ -307,13 +311,11 @@
   }
   
   .backyardBlob img {
-    width: 20rem;
-    height: 25rem;
+    width: 15rem;
+    height: 18rem;
     object-fit: cover;
     border-radius: 1rem;
-    gap: 1rem;
     box-shadow: 0 0.25rem 0.625rem rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
   }
 
 

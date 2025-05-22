@@ -6,7 +6,7 @@
   font-style: normal;
 }
 
-/* CSS Variables for colors and fonts */
+/* Colors + fonts */
 :root {
   --color-primary: #003D73;       /* Buttons, footer */
   --color-primary-hover: #8BA6BF; /* Button hover */
@@ -15,7 +15,7 @@
   
   --font-family-base: 'AUPassata', sans-serif !important;
 
-  /* Font sizes (rem) - desktop first */
+  /* Font sizes */
   --font-size-base: 1rem;          /* 16px */
   --font-size-sm: 0.875rem;        /* 14px */
   --font-size-lg: 1.125rem;        /* 18px */
@@ -26,7 +26,7 @@
   --font-weight-semibold: 600;
   --font-weight-bold: 700;
 
-  /* Spacing scale (rem) */
+  /* Spacing scale */
   --spacing-xs: 0.25rem;  /* 4px */
   --spacing-sm: 0.5rem;   /* 8px */
   --spacing-md: 1rem;     /* 16px */

@@ -3,15 +3,19 @@ import styles from './exhibits.module.css';
 
 // Images
 import boar from '../assets/images/Boar.png';
-import jars from '../assets/images/Jars.png';
-import wolves from '../assets/images/Wolves.png';
-import skeleton from '../assets/images/Skeleton.png';
 import butterflies from '../assets/images/Butterflies.png';
 import safari from '../assets/images/Safari.png';
 import moose from '../assets/images/Moose.png';
 import whale from '../assets/images/Whale.png';
+import whale2 from '../assets/images/Whale2.png';
 import oops from '../assets/images/Oops.png';
 import beetles from '../assets/images/Beetles.png';
+import beetles2 from '../assets/images/Beetles2.png';
+import beetlesvideo from '../assets/images/BeetlesVideo.MOV';
+import bear from '../assets/images/Bear.png';
+import safari2 from '../assets/images/Safari2.png';
+import safari3 from '../assets/images/Safari3.png';
+import skeleton from '../assets/images/Skeleton.png';
 
 
 export default function Home() {
@@ -29,16 +33,25 @@ export default function Home() {
       {/* Newest Addition */}
       <section className={styles.newBlob}>
       <div className={styles.badge}>New!</div>
-        <div className={styles.imageGrid}>
-          <img src={boar} alt="Boar" />
-          <img src={wolves} alt="Wolves" />
-          <img src={safari} alt="Safari" />
-          <img src={jars} alt="Jars" />
-        </div>
+      <video
+        src={beetlesvideo}
+        autoPlay
+        muted
+        loop
+        playsInline
+        style={{
+          width: '50%',
+          height: 'auto',
+          borderRadius: '1rem',
+          objectFit: 'cover',
+          boxShadow: '0 0.25rem 0.625rem rgba(0, 0, 0, 0.1)',
+          transform: 'rotate(-2deg)',
+        }}
+      />
         <div className={styles.textBlock}>
           <h3>Our newest addition</h3>
-         <p><strong>NAME OF SOLUTION</strong><br />A digital experience part of <i>Beetles! Obsessed with a collection.</i></p>
-         <p>NAME OF SOLUTION lets you explore the hidden lives and purposes of insects - how they <i>build, survive, and shape</i> the world around us in surprising ways. Though often overlooked, insects are essential to our ecosystems and even our future. This interactive game reveals just how fascinating (and important) they really are.</p>
+         <p><strong>A Bug's Life</strong><br />A digital experience part of <i>Beetles! Obsessed with a collection.</i></p>
+         <p><i>A Bug's Life</i> lets you explore the hidden lives and purposes of insects - how they <i>build, survive, and shape</i> the world around us in surprising ways. Though often overlooked, insects are essential to our ecosystems and even our future. This interactive game reveals just how fascinating (and important) they really are.</p>
 
          <p>Insects may be tiny, but their impact is <b>massive.</b> From climate change to future foods, they play a role in challenges young generations care about. Here we make it personal - linking your choices and values to the insect world in a playful way.</p>
         
@@ -52,6 +65,7 @@ export default function Home() {
       <div className={styles.badge}>Temporary</div>
         <div className={styles.imageGrid}>
           <img src={beetles} alt="Beetles" />
+          <img src={beetles2} alt="Beetles2" />
         </div>
         <div className={styles.textBlock}>
           <h3>Beetles!</h3>
@@ -83,6 +97,7 @@ export default function Home() {
       <section className={styles.africanBlob}>
       <div className={styles.badge}>Permanent</div>
       <img src={safari} alt="Safari" />
+      <img src={safari2} alt="Safari2" />
         <div className={styles.textBlock}>
           <h3>Expedition to Africa</h3>
           <p><strong>Join us on an adventurous journey back in time!</strong><br />In 1947, the Natural History Museum took part in a major Danish - East African expedition to Kenya and Tanzania.</p>
@@ -96,7 +111,12 @@ export default function Home() {
       {/* Nature */}
       <section className={styles.natureBlob}>
       <div className={styles.badge}>Permanent</div>
+      <div className={styles.imageGrid}>
+      <img src={boar} alt="Boar" />
+      <img src={bear} alt="Bear" />
       <img src={moose} alt="Moose" />
+      <img src={butterflies} alt="Butterflies" />
+      </div>
         <div className={styles.textBlock}>
         <h3>Our Nature</h3>
           <p><strong>- The Natural History of the Danish Landscape</strong><br /> <i>Our Nature</i> explores the rich natural history of the Danish landscape - from its dramatic shaping during and after the last Ice Age to the diverse environments we see today.</p>
@@ -112,7 +132,8 @@ export default function Home() {
       {/* Backyard */}
       <section className={styles.backyardBlob}>
       <div className={styles.badge}>Permanent</div>
-      <img src={butterflies} alt="Butterflies" />
+      <img src={whale} alt="Whale" />
+      <img src={skeleton} alt="Skeleton" />
         <div className={styles.textBlock}>
         <h3>The Global Backyard</h3>
           <p><strong>An exhibition about biodiversity</strong><br /> Discover the overwhelming variety of life on Earth - from the species we know, to those we've yet to find, and even the ones disappearing before we can discover them.</p>
@@ -131,7 +152,8 @@ export default function Home() {
         src="https://www.youtube.com/embed/x87fNXD7iog"
         width="250"
         height="450"
-        allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allow="accelerometer; clipboard-write; 
+        encrypted-media; gyroscope; picture-in-picture"
         allowFullScreen
         title="99 Species Trailer"
     ></iframe>

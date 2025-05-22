@@ -10,7 +10,7 @@ import InstagramIcon from '@mui/icons-material/Instagram';
 import YouTubeIcon from '@mui/icons-material/YouTube';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 
-// Tripadvisor icon (custom)
+// Tripadvisor icon
 const TripadvisorIcon = (props) => (
   <svg
     {...props}
