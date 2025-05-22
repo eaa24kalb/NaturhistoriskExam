@@ -38,7 +38,7 @@ return (
       <nav className={`${styles.nav} ${isMenuOpen ? styles.navOpen : ''}`}>
         <NavLink to="/" className={styles.navItem} onClick={() => setIsMenuOpen(false)}>Home</NavLink>
         <NavLink to="/exhibits" className={styles.navItem} onClick={() => setIsMenuOpen(false)}>Exhibits</NavLink>
-        <NavLink to="/mols" className={styles.navItem} onClick={() => setIsMenuOpen(false)}>Molslaboratoriet</NavLink>
+        <NavLink to="/mols" className={styles.navItem} onClick={() => setIsMenuOpen(false)}>Mols Laboratory</NavLink>
         <NavLink to="/about" className={styles.navItem} onClick={() => setIsMenuOpen(false)}>About</NavLink>
       </nav>
 

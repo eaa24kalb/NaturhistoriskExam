@@ -7,14 +7,12 @@ import butterflies from '../assets/images/Butterflies.png';
 import safari from '../assets/images/Safari.png';
 import moose from '../assets/images/Moose.png';
 import whale from '../assets/images/Whale.png';
-import whale2 from '../assets/images/Whale2.png';
 import oops from '../assets/images/Oops.png';
 import beetles from '../assets/images/Beetles.png';
 import beetles2 from '../assets/images/Beetles2.png';
 import beetlesvideo from '../assets/images/BeetlesVideo.MOV';
 import bear from '../assets/images/Bear.png';
 import safari2 from '../assets/images/Safari2.png';
-import safari3 from '../assets/images/Safari3.png';
 import skeleton from '../assets/images/Skeleton.png';
 
 
@@ -50,8 +48,8 @@ export default function Home() {
       />
         <div className={styles.textBlock}>
           <h3>Our newest addition</h3>
-         <p><strong>A Bug's Life</strong><br />A digital experience part of <i>Beetles! Obsessed with a collection.</i></p>
-         <p><i>A Bug's Life</i> lets you explore the hidden lives and purposes of insects - how they <i>build, survive, and shape</i> the world around us in surprising ways. Though often overlooked, insects are essential to our ecosystems and even our future. This interactive game reveals just how fascinating (and important) they really are.</p>
+         <p><strong>A Bug&apos;s Life</strong><br />A digital experience part of <i>Beetles! Obsessed with a collection.</i></p>
+         <p><i>A Bug&apos;s Life</i> lets you explore the hidden lives and purposes of insects - how they <i>build, survive, and shape</i> the world around us in surprising ways. Though often overlooked, insects are essential to our ecosystems and even our future. This interactive game reveals just how fascinating (and important) they really are.</p>
 
          <p>Insects may be tiny, but their impact is <b>massive.</b> From climate change to future foods, they play a role in challenges young generations care about. Here we make it personal - linking your choices and values to the insect world in a playful way.</p>
         
@@ -70,9 +68,9 @@ export default function Home() {
         <div className={styles.textBlock}>
           <h3>Beetles!</h3>
          <p><strong>Art & Science: Beetles! - Obsessed with a Collection</strong></p>
-         <p>Artist Birgit Bjerre explores the Natural History Museum's vast collections, discovering parallels between her art and the scientists' work. Inspired by their detailed and methodical approach, she creates a unique dialogue between art and science.</p>
+         <p>Artist Birgit Bjerre explores the Natural History Museum&apos;s vast collections, discovering parallels between her art and the scientists&apos; work. Inspired by their detailed and methodical approach, she creates a unique dialogue between art and science.</p>
 
-         <p>This exhibition is part of the museum's <i>Art & Science</i> program, highlighting new ways to connect people with nature and the importance of protecting our ecosystem.</p>
+         <p>This exhibition is part of the museum&apos;s <i>Art & Science</i> program, highlighting new ways to connect people with nature and the importance of protecting our ecosystem.</p>
         </div>
       </section>
 
@@ -101,7 +99,7 @@ export default function Home() {
         <div className={styles.textBlock}>
           <h3>Expedition to Africa</h3>
           <p><strong>Join us on an adventurous journey back in time!</strong><br />In 1947, the Natural History Museum took part in a major Danish - East African expedition to Kenya and Tanzania.</p>
-          <p>The goal was to collect birds and mammals for the museum's collections - some of which became part of our iconic <i>Savannah of Africa</i> exhibition. As part of the museum's anniversary year in 2021, the original exhibition was reimagined and brought to life once again as<b> Expedition to Africa.</b></p>
+          <p>The goal was to collect birds and mammals for the museum&apos;s collections - some of which became part of our iconic <i>Savannah of Africa</i> exhibition. As part of the museum&apos;s anniversary year in 2021, the original exhibition was reimagined and brought to life once again as<b> Expedition to Africa.</b></p>
         
         <p><strong>What can you experience?</strong> <br />Step into the world of the expedition and: <br />- Feel the atmosphere of the field camp in East Africa <br /> - Try your hand at being a conservator for a day <br />- Get up close with rare animals and fascinating expedition stories</p>
         </div>
@@ -136,9 +134,9 @@ export default function Home() {
       <img src={skeleton} alt="Skeleton" />
         <div className={styles.textBlock}>
         <h3>The Global Backyard</h3>
-          <p><strong>An exhibition about biodiversity</strong><br /> Discover the overwhelming variety of life on Earth - from the species we know, to those we've yet to find, and even the ones disappearing before we can discover them.</p>
+          <p><strong>An exhibition about biodiversity</strong><br /> Discover the overwhelming variety of life on Earth - from the species we know, to those we&apos;ve yet to find, and even the ones disappearing before we can discover them.</p>
 
-          <p>The title of the exhibition <i>The Global Backyard </i> reflects how many of the exhibition's stories connect both global nature and our local surroundings. A key example is the global sperm whale that stranded near Sæby on Jutland's east coast - in our own backyard. It's biodiversity that spans the wonders of the entire planet.</p>
+          <p>The title of the exhibition <i>The Global Backyard </i> reflects how many of the exhibition&apos;s stories connect both global nature and our local surroundings. A key example is the global sperm whale that stranded near Sæby on Jutland&apos;s east coast - in our own backyard. It&apos;s biodiversity that spans the wonders of the entire planet.</p>
         
         <p>Most elements in the exhibitions are original authentic artifacts from nature. They have been collected and preserved through decades - even centuries. These artifacts are the real deal in which an astronomical number of work hours have been invested in.</p>
         </div>
@@ -166,7 +164,7 @@ export default function Home() {
       <i>99 Species</i> is an interactive exhibition at the Natural History Museum Aarhus, inviting kids and adults alike to discover 99 fascinating Danish species everyone should know before growing up.
     </p>
     <p>
-      Spread throughout the museum, the exhibition turns your visit into a fun <b>treasure hunt</b> where you'll spot everything from scarlet dung beetles to magnified head lice. <br />
+      Spread throughout the museum, the exhibition turns your visit into a fun <b>treasure hunt</b> where you&apos;ll spot everything from scarlet dung beetles to magnified head lice. <br />
       Use your phone or a free “ArtBook” to track and check off each species as you explore.
     </p>
     <p>

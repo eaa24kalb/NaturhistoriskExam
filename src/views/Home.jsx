@@ -93,7 +93,7 @@ export default function Home() {
       <img src={beetles} alt="Beetles" />
       <div className={styles.cardContent}>
         <p className={styles.cardTitle}>Beetles! Obsessed with a collection</p>
-        <p className={styles.cardInfo}>Art and science meet when Birgit Bjerre's works enter into an artistic dialogue with the museum's collections.</p>
+        <p className={styles.cardInfo}>Art and science meet when Birgit Bjerre&apos;s works enter into an artistic dialogue with the museum&apos;s collections.</p>
         <button className={styles.readMoreBtn} onClick={() => navigate('/exhibits')}>
           Read more →
         </button>
@@ -143,8 +143,8 @@ export default function Home() {
         <div className={styles.textBlock}>
           <h3>Explore our Exhibitions</h3>
           <p><strong>The African Savannah</strong><br />Step back in time and join a thrilling African expedition. Explore the recreated field camp, try conservation work, and discover rare animals and unforgettable stories in the <i>Expedition to Africa.</i></p>
-         <p><strong>Our Nature</strong><br />Discover Denmark's natural history - from Ice Age landscapes to today's diverse environments - and explore how nature and humans have shaped each other over millennia in the <i>Our Nature</i></p>
-         <p><strong>The Global Backyard</strong><br />Explore Earth's incredible biodiversity - from familiar species to those yet undiscovered or already lost - in <i>The Global Backyard</i> an exhibition connecting global wonders to our local environment through authentic natural artifacts.</p>
+         <p><strong>Our Nature</strong><br />Discover Denmark&apos;s natural history - from Ice Age landscapes to today&apos;s diverse environments - and explore how nature and humans have shaped each other over millennia in the <i>Our Nature</i></p>
+         <p><strong>The Global Backyard</strong><br />Explore Earth&apos;s incredible biodiversity - from familiar species to those yet undiscovered or already lost - in <i>The Global Backyard</i> an exhibition connecting global wonders to our local environment through authentic natural artifacts.</p>
          <p><strong>99 Species</strong><br />Discover 99 fascinating Danish species in a fun, interactive scavenger hunt at the Natural History Museum Aarhus - perfect for all ages to explore and learn about local biodiversity!</p>
          <button onClick={() => navigate('/exhibits')}>
           Explore

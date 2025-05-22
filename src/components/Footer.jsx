@@ -54,7 +54,7 @@ export default function Footer() {
         </div>
 
         <div>
-          <h3>Molslaboratoriet</h3>
+          <h3>Mols Laboratory</h3>
           <p><a href="https://maps.app.goo.gl/7ZznqjBmyKxSDwVA9" target="_blank" rel="noopener noreferrer" aria-label="Map to Molslaboratoriet">
       Strandkærvej 6, Femmøller<br />8400 Ebeltoft
     </a></p>
@@ -63,7 +63,7 @@ export default function Footer() {
         </div>
 
         <div>
-          <h3>Museets åbningstider</h3>
+          <h3>Opening Hours</h3>
           <p>Monday: Closed<br />Tuesday: 9-16<br />Wednesday: 9-21<br />Thursday - Sunday: 9-16</p>
         </div>
 
@@ -126,7 +126,7 @@ export default function Footer() {
           </div>
 
           <div className={styles.locationBox}>
-            <p className={styles.locationTitle}>Find Molsalaboratoriet</p>
+            <p className={styles.locationTitle}>Find the Mols Laboratory</p>
             <iframe
               className={styles.map}
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d176.2021684119716!2d10.574549572543763!3d56.226266511651666!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x464c316616f44ff7%3A0xaecb96de07083aae!2sMolslaboratoriet%2C%20Naturhistorisk%20Museum!5e1!3m2!1sda!2sus!4v1747398590614!5m2!1sda!2sus"
