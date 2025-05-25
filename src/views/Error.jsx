@@ -41,7 +41,7 @@ export default function Error() {
       const newTopPercent = (newTopPx / containerHeight) * 100;
 
       setPosition({ top: newTopPercent, left: newLeftPercent });
-    }, 5000);
+    }, 4000);
 
     return () => clearInterval(interval);
   }, []);
@@ -60,11 +60,24 @@ export default function Error() {
         <h1 className={styles.code}>404</h1>
         <p className={styles.message}>PAGE NOT FOUND</p>
       </div>
+
+      
       <div className={styles.bottomText}>
         <p><strong>Oops...</strong></p>
         <p>We are working on fixing this page.</p>
       </div>
 
+
+      {/* Home button */}
+      <button
+        onClick={handleLogoClick}
+        className={styles.homeButton}
+      >
+        Go to Home
+      </button>
+
+
+    {/* Easter egg beetle */}
       <img
         src={beetle}
         alt="Beetle"

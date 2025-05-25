@@ -15,8 +15,6 @@ import beetles from '../assets/images/Beetles.png';
 import butterfly from '../assets/images/Butterfly-jar.png';
 import bear2 from '../assets/images/Bear2.png';
 
-
-
 export default function Home() {
 
   const navigate = useNavigate();

@@ -20,43 +20,43 @@
 
 .logo {
   position: absolute;
-  top: 1.5625rem; /* 25px */
-  left: 1.5625rem; /* 25px */
+  top: 1.5625rem; 
+  left: 1.5625rem; 
   background-color: white;
-  padding: 0.5rem 0.75rem; /* 8px 12px */
-  border-radius: 0.375rem; /* 6px */
-  max-width: 15.625rem; /* 250px */
-  box-shadow: 0 0.125rem 0.375rem rgba(0, 0, 0, 0.15); /* 2px 6px */
+  padding: 0.5rem 0.75rem; 
+  border-radius: 1.6rem;
+  max-width: 15.625rem; 
+  box-shadow: 0 0.125rem 0.375rem rgba(0, 0, 0, 0.15); 
 }
 
 .main {
-  margin-top: 9rem; /* 140px */
+  margin-top: 14rem; 
 }
 
 .code {
-  font-size: 7rem; /* 80px */
-  font-weight: 700; /* bold */
+  font-size: 7rem; 
+  font-weight: 700;
   line-height: 1.1;
   margin: 0;
   color: white;
 }
 
 .message {
-  font-size: 1.875rem; /* 30px */
-  font-weight: 600; /* semi-bold */
-  margin-top: 1rem; /* 16px */
+  font-size: 1.875rem;
+  font-weight: 600; 
+  margin-top: 1rem;
   color: white;
 }
 
 .bottomText {
     position: absolute;
     top: 60%;
-    left: 3rem; /* small gap from the left edge */
-    transform: none; /* remove center translation */
+    left: 3rem;
+    transform: none;
     font-size: 1.25rem;
     line-height: 1.4;
     max-width: 90vw;
-    text-align: left; /* align text to left */
+    text-align: left; 
     color: white;
   }
 
@@ -65,6 +65,27 @@
     margin: 0.5rem 0;   /* spacing between lines */
     color: white;
   }
+
+  .homeButton {
+    margin-top: 2rem;
+    padding: 0.75rem 2rem;
+    background-color: white;
+    color: #003D73;
+    border: none;
+    border-radius: 2rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: 0 0.125rem 0.375rem rgba(0, 0, 0, 0.15);
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .homeButton:hover {
+    background-color:#8BA6BF;
+    color: #002a50;
+    transform: scale(1.05);
+  }
+  
 
 .beetle {
     width: 5rem;

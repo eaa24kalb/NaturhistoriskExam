@@ -10,7 +10,7 @@ import whale from '../assets/images/Whale.png';
 import oops from '../assets/images/Oops.png';
 import beetles from '../assets/images/Beetles.png';
 import beetles2 from '../assets/images/Beetles2.png';
-import beetlesvideo from '../assets/images/BeetlesVideo.MOV';
+import screensaver from '../assets/images/ScreenSaver.MOV';
 import bear from '../assets/images/Bear.png';
 import safari2 from '../assets/images/Safari2.png';
 import skeleton from '../assets/images/Skeleton.png';
@@ -32,19 +32,12 @@ export default function Home() {
       <section className={styles.newBlob}>
       <div className={styles.badge}>New!</div>
       <video
-        src={beetlesvideo}
+        src={screensaver}
         autoPlay
         muted
         loop
         playsInline
-        style={{
-          width: '50%',
-          height: 'auto',
-          borderRadius: '1rem',
-          objectFit: 'cover',
-          boxShadow: '0 0.25rem 0.625rem rgba(0, 0, 0, 0.1)',
-          transform: 'rotate(-2deg)',
-        }}
+        className={styles.screensaver}
       />
         <div className={styles.textBlock}>
           <h3>Our newest addition</h3>
@@ -54,7 +47,14 @@ export default function Home() {
          <p>Insects may be tiny, but their impact is <b>massive.</b> From climate change to future foods, they play a role in challenges young generations care about. Here we make it personal - linking your choices and values to the insect world in a playful way.</p>
         
         <p><strong>Preview: Dive In!</strong> <br />Get a sneak peak of the digital experience below.</p>
-         <button>Try it out!</button>
+        <button
+        onClick={() =>
+          window.open("https://www.figma.com/proto/q5GvPzWAJucYVfNUqk7xnc/bugs-solution-website-wireframe?page-id=0%3A1&node-id=467-336&viewport=310%2C-1522%2C0.12&t=3RGwLuUlNeLryPNB-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=16%3A128", "_blank")
+        }
+        className="your-button-class"
+      >
+        Try it out!
+      </button>
         </div>
       </section>
 
