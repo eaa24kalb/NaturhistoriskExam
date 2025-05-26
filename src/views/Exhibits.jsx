@@ -49,7 +49,7 @@ export default function Home() {
         <p><strong>Preview: Dive In!</strong> <br />Get a sneak peak of the digital experience below.</p>
         <button
         onClick={() =>
-          window.open("https://www.figma.com/proto/q5GvPzWAJucYVfNUqk7xnc/bugs-solution-website-wireframe?page-id=0%3A1&node-id=467-336&viewport=310%2C-1522%2C0.12&t=3RGwLuUlNeLryPNB-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=16%3A128", "_blank")
+          window.open("https://www.figma.com/proto/q5GvPzWAJucYVfNUqk7xnc/bugs-solution-website-wireframe?page-id=589%3A355&node-id=774-1153&viewport=-1798%2C-2998%2C0.12&t=KWY2oOzOYLJmYYEh-1&scaling=contain&content-scaling=fixed")
         }
         className="your-button-class"
       >
